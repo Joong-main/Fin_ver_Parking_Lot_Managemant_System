@@ -4,6 +4,7 @@
 
 
 <ul> 프로그램을 실행하면 UserInfo.txt 에서 값을 가져와 연결 리스트 노드에 추가한다. </ul>
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/1%EB%B2%88%EC%84%A0%ED%83%9D.PNG" ><img>
 
 <ol> 1.주차를 선택하면 노드를 생성하고 전화번호, 차량 번호를 입력 받아 등록 시점의 시간과 함께 노드에 저장한다. </ol>
 
