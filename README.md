@@ -7,6 +7,7 @@
 
 
 <ol> 1.주차를 선택하면 노드를 생성하고 전화번호, 차량 번호를 입력 받아 등록 시점의 시간과 함께 노드에 저장한다. </ol>
+</br>
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/1%EB%B2%88%EC%84%A0%ED%83%9D.PNG" ><img>
 
 <ol> 2.출차를 선택하면 해당 전화번호를 키로 가지는 노드를 삭제한다. </ol>
