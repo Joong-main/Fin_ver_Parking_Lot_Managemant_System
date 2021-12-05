@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 #include <stdio.h>										
 #include <stdlib.h>
 #include <string.h>
@@ -42,26 +35,22 @@ char * return_time(void);
 
 int main()
 {
-	/*
-	time_t current_time;
-	time(&current_time);
-	printf("%s\n", ctime(&current_time));
-	*/
+
 
 	return_time();
 
-	node* head = NULL;	//헤드 포인터 선언
+	node* head = NULL;	//헤드 포인터 
 	int num = 0;
 	int in = 0;
-	node* se;	   //switch 문의 case 3: 에서 찾은 노드의 주소값을 임시로 저장하기 위해서
+	node* se;	   //switch  case 3: 에서 찾은 노드의 주소값 임시 저장
 	int i = 0;
 
 	FILE* des = fopen("UserInfo.txt", "rt");	//파일의 내용을 기초로 연결리스트 구성을 위해 입력스트림 생성
 
-	if (des == NULL)	//입력스트림의 생성을 확인
+	if (des == NULL)	//입력스트림의 생성
 	{
 		printf("파일 읽기 실패!\n");
-		return -1;	//비정상적인 종료를 의미
+		return -1;	//오류
 	}
 	while (feof(des) == 0)
 	{
@@ -109,8 +98,8 @@ int main()
 	}
 	}
 	fclose(des);
-	/*파일의 내용에서 ':' 이용해서 ':' 다음에 나오는 문자열을 name,phon에 차례대로 넣는다. 그리고
-	만들어놓은 새로운 노드에 name,phon을 입력시키고 이 새로운 노드로 연결리스트를 구성한다.*/
+	/*파일의 내용에서 ':' 이용해서 ':' 다음에 나오는 문자열을 phone,car_num, time에 차례대로 넣는다. 그리고
+	만들어놓은 새로운 노드에 입력시키고 이 새로운 노드로 연결리스트를 구성한다.*/
 	while (1)
 	{	
 
@@ -118,7 +107,7 @@ int main()
 		printf("   메뉴를 선택하시오 (숫자 입력): ");
 		scanf("%d", &num);
 
-		switch (num)		//switch 문을 이용해서 메뉴를 선택.
+		switch (num)		//switch 
 		{
 		case 1:
 			insert(&head, createnode(return_time));
@@ -181,8 +170,8 @@ void print_menu(void) {
 node* createnode(char* (*fp) (void))
 {
 	node* newnode = (node*)malloc(sizeof(node));		//새로운 노드 생성
-	printf("\n   전화번호:");	scanf("%s", (newnode->data).phone);	//name 입력
-	printf("\n   차량번호:");	scanf("%s", (newnode->data).car_num);	//phone 입력
+	printf("\n   전화번호:");	scanf("%s", (newnode->data).phone);	//phone 입력
+	printf("\n   차량번호:");	scanf("%s", (newnode->data).car_num);	//car_num 입력
 	
 	//printf("\n   시간:");	scanf("%s", (newnode->data).time);
 	
@@ -198,20 +187,20 @@ void insert(node** phead, node* newnode)
 {
 	node* ptr = *phead;
 	node* p = NULL;
-	if (*phead == NULL)	//연결리스트에 아무 내용이 없을때
+	if (*phead == NULL)	//연결리스트 NULL
 	{
 		(*phead) = newnode;
 		newnode->next = NULL;
 	}
 	else
 	{
-		while (ptr != NULL)	//마지막 노드의 주소값을 찾는 반복문
+		while (ptr != NULL)	//마지막 노드의 주소 찾기
 		{
 			p = ptr;
 			ptr = ptr->next;
 		}
 		ptr = newnode;
-		p->next = ptr;	//연결리스트의 끝에 newnode를 연결
+		p->next = ptr;	// 끝에 newnode를 연결
 	}
 }
 node* search(node* phead)
@@ -221,8 +210,8 @@ node* search(node* phead)
 	printf("   전화번호:");	scanf("%s", el.phone);
 	while (ptr != NULL)
 	{
-		if (!strcmp(ptr->data.phone, el.phone))	//각 노드의 데이터 내의 이름과 찾을 이름을 비교
-			return ptr;	//찾을 이름을 가진 노드의 주소값을 반환
+		if (!strcmp(ptr->data.phone, el.phone))	//각 노드의 데이터 내의 전화번호과 찾을 전화번호를 비교
+			return ptr;	//찾을 전화번호 가진 노드의 주소값을 반환
 		ptr = ptr->next;
 	}
 	return NULL;
@@ -318,12 +307,7 @@ int is_admin(void) {
 
 
 char* return_time(void) {
-	/*
-	time_t current_time;
-	struct tm* t;
-	current_time = time(NULL);
-	t = localtime(&current_time);
-	*/
+
 	
     time_t now_time;
     struct tm *now_date;
