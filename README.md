@@ -32,6 +32,7 @@
 ## 소스 코드 설명
 
 * 연결리스트, 함수 선언
+* 
  <img src= "https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/1.%20%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EB%B0%8F%20%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8.PNG" ></img>
  
  <ol>헤더 파일, 관리자 비밀번호와 연결리스트 구조를 정의 한다.</ol>
@@ -41,6 +42,7 @@
 </br>
 </br>
 * print_menu 함수
+
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/5.%20%ED%94%84%EB%A6%B0%ED%8A%B8%20%EB%A9%94%EB%89%B4%ED%95%A8%EC%88%98.PNG"></img>
 
 <ol>직사각형 디자인으로 선택 항목을 프린트 한다.</ol>
@@ -49,6 +51,7 @@
 </br>
 
 * 노드 생성함수
+* 
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/6.%20%EB%85%B8%EB%93%9C%EC%83%9D%EC%84%B1%ED%95%A8%EC%88%98.PNG"></img>
 <ol> 새로운 노드를 생성하고 전화번호와 차량번호를 사용자로 부터 입력 받아 노드 멤버 변수에 추가한다.</ol>
 <ol>return_time 함수를 인자로 사용하여 return 받은 현재 시간 정보 문자열을 노드 멤버 변수에 추가한다.</ol>
@@ -68,6 +71,7 @@
 </br>
 
 * 노드 탐색 함수
+* 
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/8.%EB%85%B8%EB%93%9C%20%ED%83%90%EC%83%89%ED%95%A8%EC%88%98.PNG"></img>
 
 <ol>검색할 전화번호(기본키)를 입력받아 입력받은 전화번호와 노드의 멤보변수의 정보가 같을때 까지 이동한다</ol>
@@ -116,8 +120,11 @@
 </br>
 
 * 메인함수
+
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/2.%20%EB%A9%94%EC%9D%B8%ED%95%A8%EC%88%98.PNG"></img>
+
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/3.%20%EB%A9%94%EC%9D%B8%20%ED%95%A8%EC%88%98.PNG"></img>
+
 <ol>실행 후 파일로 부터 값을 가져와 순서대로 phone,car_num,time 변수에 저장하고 하나의 노드를 생성하는 작업을 반복하여 모든 파일 데이터를 연결리스트에 올린다.</ol>
 </br>
 </br>
