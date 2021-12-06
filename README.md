@@ -73,6 +73,61 @@
 <ol>검색할 전화번호(기본키)를 입력받아 입력받은 전화번호와 노드의 멤보변수의 정보가 같을때 까지 이동한다</ol>
 <ol>만일 같은 노드들의 멤버 변수중 같은 것이 있다면 그 노드의 주소를 리턴, 없으면 NULL을 리턴한다.</ol>
 
+</br>
+</br>
 
+* 노드 삭제 함수
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/9.%EB%85%B8%EB%93%9C%20%EC%82%AD%EC%A0%9C%20%ED%95%A8%EC%88%98.PNG"></img>
 
+<ol>만일 노드가 없다면 종료한다.</ol>
+<ol>제거 대상이 맨앞의 노드라면 다음 노드가 헤드노드가 되고 제거 대상은 메모리를 해제한다.</ol>
+<ol>제거 대상이 연결리스트 중간이라면 제거 대상의 다음 노드 주소를 이전노드의 다음 노드로 설정하고 연결하고 메모리를 해제한다.</ol>
+
+</br>
+</br>
+
+* 노드 전체 출력함수
+<img src ="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/10.%EB%85%B8%EB%93%9C%20%EC%A0%84%EC%B2%B4%20%EC%B6%9C%EB%A0%A5.PNG"></img>
+
+<ol>헤드 노드부터 연결리스트의 끝까지 돌면서 노드별 멤버변수 값을 출력한다.</ol>
+
+</br>
+</br>
+
+* 파일쓰기 함수
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/11.%20%ED%8C%8C%EC%9D%BC%20%EC%93%B0%EA%B8%B0%20%ED%95%A8%EC%88%98.PNG"></img>
+<ol>UserInfo.txt 파일로을 쓰기 모드로 열고 전체 노드의 멤버 변수 정보를 파일에 모두 쓴다.</ol>
+
+</br>
+</br>
+
+* 관리자 권한 함수
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/12.%20%EA%B4%80%EB%A6%AC%EC%9E%90%20%EA%B6%8C%ED%95%9C%20%ED%95%A8%EC%88%98.PNG"></img>
+<ol>입력값이 패스워드와 같으면 1을 아니면 0을 리턴한다.</ol>
+
+</br>
+</br>
+
+* 현재시간 리턴 함수
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/13.%20%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84%20%EB%A6%AC%ED%84%B4%ED%95%A8%EC%88%98.PNG"></img>
+<ol> 현재시간을 문자열 buf_t에 저장하여 리턴한다.</ol>
+
+</br>
+</br>
+
+* 메인함수
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/2.%20%EB%A9%94%EC%9D%B8%ED%95%A8%EC%88%98.PNG"></img>
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/3.%20%EB%A9%94%EC%9D%B8%20%ED%95%A8%EC%88%98.PNG"></img>
+<ol>실행 후 파일로 부터 값을 가져와 순서대로 phone,car_num,time 변수에 저장하고 하나의 노드를 생성하는 작업을 반복하여 모든 파일 데이터를 연결리스트에 올린다.</ol>
+</br>
+</br>
+
+<img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/4.%EB%A9%94%EC%9D%B8%ED%95%A8%EC%88%98.PNG"></img>
+
+<ol>스위치 문을 통해 사용자가 메뉴를 선택하도록한다.</ol>
+<ol>1번 선택시 인서트 함수가 실행되어 노드를 추가한다.</ol>
+<ol>2번 선택시 딜레트 함수가 실행되어 값을 찾아 삭제한다.</ol>
+<ol>3번 선택시 서치 함수가 실행되어 기본키인 전화번호를 기준으로 노드를 찾아 출력한다.</ol>
+<ol>4번 선택시 관리자가 맞다면 디스플레이 함수가 실형되어 모든 데이터를 보여준다.</ol>
+<ol>5번 선택시 파일에 모든 노드 데이터를 저장하고 프로그램이 종료된다.
 
