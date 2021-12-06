@@ -51,7 +51,7 @@
 </br>
 
 * 노드 생성함수
-* 
+ 
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/6.%20%EB%85%B8%EB%93%9C%EC%83%9D%EC%84%B1%ED%95%A8%EC%88%98.PNG"></img>
 <ol> 새로운 노드를 생성하고 전화번호와 차량번호를 사용자로 부터 입력 받아 노드 멤버 변수에 추가한다.</ol>
 <ol>return_time 함수를 인자로 사용하여 return 받은 현재 시간 정보 문자열을 노드 멤버 변수에 추가한다.</ol>
@@ -100,6 +100,7 @@
 </br>
 
 * 파일쓰기 함수
+
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/11.%20%ED%8C%8C%EC%9D%BC%20%EC%93%B0%EA%B8%B0%20%ED%95%A8%EC%88%98.PNG"></img>
 <ol>UserInfo.txt 파일로을 쓰기 모드로 열고 전체 노드의 멤버 변수 정보를 파일에 모두 쓴다.</ol>
 
@@ -107,6 +108,7 @@
 </br>
 
 * 관리자 권한 함수
+
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/12.%20%EA%B4%80%EB%A6%AC%EC%9E%90%20%EA%B6%8C%ED%95%9C%20%ED%95%A8%EC%88%98.PNG"></img>
 <ol>입력값이 패스워드와 같으면 1을 아니면 0을 리턴한다.</ol>
 
@@ -114,6 +116,7 @@
 </br>
 
 * 현재시간 리턴 함수
+
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/13.%20%ED%98%84%EC%9E%AC%EC%8B%9C%EA%B0%84%20%EB%A6%AC%ED%84%B4%ED%95%A8%EC%88%98.PNG"></img>
 <ol> 현재시간을 문자열 buf_t에 저장하여 리턴한다.</ol>
 
