@@ -71,7 +71,7 @@
 </br>
 
 * 노드 탐색 함수
-* 
+ 
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/8.%EB%85%B8%EB%93%9C%20%ED%83%90%EC%83%89%ED%95%A8%EC%88%98.PNG"></img>
 
 <ol>검색할 전화번호(기본키)를 입력받아 입력받은 전화번호와 노드의 멤보변수의 정보가 같을때 까지 이동한다</ol>
@@ -91,6 +91,7 @@
 </br>
 
 * 노드 전체 출력함수
+
 <img src ="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/10.%EB%85%B8%EB%93%9C%20%EC%A0%84%EC%B2%B4%20%EC%B6%9C%EB%A0%A5.PNG"></img>
 
 <ol>헤드 노드부터 연결리스트의 끝까지 돌면서 노드별 멤버변수 값을 출력한다.</ol>
