@@ -58,6 +58,7 @@
 </br>
 
 * 노드 삽입함수
+
 <img src="https://github.com/Joong-main/Fin_ver_Parking_Lot_Managemant_System/blob/main/img/7.%20%EB%85%B8%EB%93%9C%EC%B6%94%EA%B0%80%ED%95%A8%EC%88%98.PNG"><img>
 
 <ol>만약 기존에 연결리스트가 없다면 새로운 노드를 생성한다.</ol>
